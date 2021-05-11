@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;    
+}
+
+#main_div{
+	background-color: #f1ebeb;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 100px;
+    padding: 50px 0px 0px 100px;
+	
+}
+.cards{
+
+   width: 75%;
+    height: 450px;
+    display: grid;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 3px 6px 1px #635f5f;
+    grid-template-rows: 215px 0px 50px 110px 0px
+
+}
+h1{
+    font-weight: lighter;
+    font-size: 35px;
+    background-color: #f4dd41;
+    min-height: 35%;
+    border-radius: 5px 5px 0px 0px;
+    padding: 60px 0px;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+h2{
+	grid-column: 1/5;
+    grid-row: 3/3;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px 0px 0px 20px;
+    text-decoration:underline;
+}
+p{
+    grid-column: 1/5;
+    grid-row: 4/4;
+    text-align: left;
+    line-height: 1.7;
+    padding: 10px 0px 10px 20px;
+    border-bottom: 1px solid #c4c4b8;
+    color: #a3a39b;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px;
+    color: #0ba5a5;
+    grid-row: 6/6;
+}
+i{
+	color: #0ba5a5;
+    grid-column: 3/3;
+    grid-row: 6/6;
+    padding: 15px;
+    cursor: pointer;
+}
+.i1{
+	color: #0ba5a5;
+    padding: 15px;
+    grid-column: 4/4;
+    grid-row: 6/6;
+}
+

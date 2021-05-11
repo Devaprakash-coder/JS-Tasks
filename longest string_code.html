@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code</title>
+	<link rel="stylesheet" type="text/css" href="codes.css">
+</head>
+<body>
+<div class="container">
+	<div class="task">
+		<h1>Longest String</h1>
+		<h2><u>Definition:</u></h2>
+		<p>We have to find which string is longest/largest from the given sentence.</p>
+	</div>
+	<div class="temp">
+		<h1>Later</h1>
+		<h2><u>Definition:</u></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="code">
+		<h1><u>Code</u></h1>
+		<pre>
+      	function findLongestWord(str) {
+  		var longestWord = str.split(' ').sort
+  		(function(a, b){
+  		 return b.length - a.length;
+  		 });
+  		return longestWord[0];
+		}
+ 	 </pre> 
+	</div>
+	<div class="result">
+		<h1><u>Result</u></h1>
+		<p>Assume the given sentance as Apples are red.<br>
+		   The result will show Apple.(Apple is the longest word in the sentance).
+		</p>
+	</div>
+</div>
+</body>
+</html>

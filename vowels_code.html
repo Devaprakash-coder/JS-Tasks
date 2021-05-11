@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code</title>
+	<link rel="stylesheet" type="text/css" href="codes.css">
+</head>
+<body>
+<div class="container">
+	<div class="task">
+		<h1>Finding Vowels</h1>
+		<h2><u>Definition:</u></h2>
+		<p>We have to find how many times the vowel letters (A,E,I,O,U) are present in a string.</p>
+	</div>
+	<div class="temp">
+		<h1>Later</h1>
+		<h2><u>Definition:</u></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="code">
+		<h1><u>Code</u></h1>
+		<pre>
+      function vowels(words){
+      const vowelarray = ["a", "e", "i", "o", "u"]; 
+        var wordarray = words.split(""); <span>//it will split the given string.</span>
+        var vowelcount=0;
+          for (i=0; i<=wordarray.length;i++) <span>//check the splited string one by one</span>
+          {
+            if(vowelarray.includes(wordarray[i]))<span> //if the vowels present add 1 to vowelcount</span>
+            {
+            vowelcount++;
+            }
+          }
+        return vowelcount;
+    }
+  </pre> 
+	</div>
+	<div class="result">
+		<h1><u>Result</u></h1>
+		<p>Assume the given string as APPLE.<br>
+		   The result will show 2.(A and E) are the vowel letters.
+		</p>
+	</div>
+</div>
+</body>
+</html>

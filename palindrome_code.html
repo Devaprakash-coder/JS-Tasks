@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+	<link rel="stylesheet" type="text/css" href="codes.css">
+</head>
+<body>
+	<div class="container">
+	<div class="task">
+		<h1>Palindrome</h1>
+		<h2><u>Definition:</u></h2>
+		<p>A palindrome is a word, number, phrase, or other sequence of characters
+		   which reads the same backward as forward, such as madam or racecar.</p>
+	</div>
+	<div class="temp">
+		<h1>Later</h1>
+		<h2><u>Definition:</u></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="code">
+		<h1><u>Code</u></h1>
+		<pre>
+      	function Palindrome(word)
+      	{
+  		var text = word.split("").reverse().join("")
+ 		if (word==text){
+  		return true;
+		}else{
+  		return false;
+		}
+	}
+  </pre> 
+	</div>
+	<div class="result">
+		<h1><u>Result</u></h1>
+		<p>Assume the given string as Madam.<br>
+		   The result will show true(Madam - Madam)This word is a palindrome.
+		</p>
+	</div>
+</div>
+<script type="text/javascript">
+		function Palindrome(word){
+  
+  		var text = word.split("").reverse().join("")
+ 
+  			if (word==text){
+  			return true;
+			}else{
+  				return false;
+			}
+
+		}
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code</title>
+	<link rel="stylesheet" type="text/css" href="codes.css">
+</head>
+<body>
+<div class="container">
+	<div class="task">
+		<h1>Odd and Even</h1>
+		<h2><u>Definition:</u></h2>
+		<p>We have to find the odd and even number from the input and color the odd as red and even as green.</p>
+	</div>
+	<div class="temp">
+		<h1>Later</h1>
+		<h2><u>Definition:</u></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="code">
+		<h1><u>Code</u></h1>
+		<pre>
+			<-html->
+			<-head->
+				<-title->find odd and evens<-/title->
+				<-style->
+				div:nth-child(odd){ color: red; }
+				div:nth-child(even){ color: green; }
+				</-style-></-head-><-body->
+				<-p id="demo"></-p>
+				<-script->
+		 		for (i = 1; i <= 10; i++)
+    			{ 
+    			document.getElementById('demo').innerHTML+="<-div->" + i + "<-div->";
+    		}</-script->
+	</pre> 
+</div>
+	<div class="result">
+		<h1><u>Result</u></h1>
+		<p>Assume the given number are (0 to 9)<br>
+		   The result will show the even numbers in green color and odd numbers in red color.
+		</p>
+	</div>
+</div>
+</body>
+</html>

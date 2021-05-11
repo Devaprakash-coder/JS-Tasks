@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>code</title>
+	<link rel="stylesheet" type="text/css" href="codes.css">
+</head>
+<body>
+<div class="container">
+	<div class="task">
+		<h1>Anagram</h1>
+		<h2><u>Definition:</u></h2>
+		<p>An anagram is a word or phrase that's formed by rearranging the letters of another word or phrase.
+		   For example, the letters that make up “A decimal point” can be turned into the anagram.</p>
+	</div>
+	<div class="temp">
+		<h1>Later</h1>
+		<h2><u>Definition:</u></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="code">
+		<h1><u>Code</u></h1>
+		<pre>
+      	function isAnagram(word1, word2) {
+		  let word1Array = word1.split("").sort().join("").toLowerCase()
+		  let word2Array = word2.split("").sort().join("").toLowerCase()
+		  if(word1Array == word2Array) {
+		    return true
+		  }else{
+		    return false
+		  }
+		}
+  </pre> 
+	</div>
+	<div class="result">
+		<h1><u>Result</u></h1>
+		<p>Assume the given string as (pot,top).<br>
+		   The result will show true(pot = top)This word is a Anagram.
+		</p>
+	</div>
+</div>
+</body>
+</html>

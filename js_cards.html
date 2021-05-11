@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS_cards</title>
+	<link rel="stylesheet" type="text/css" href="css/js_cards.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="main_div"></div>
+
+	<script type="text/javascript">
+		var data = [
+		{title:"Finding Vowels",definition:"Definition:",content:"We have to find how many times the vowel words (A,E,I,O,U) are present in a string.",link: "vowels_code.html"},
+		{title:"Palindrome",definition:"Definition:",content:"A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward.",link: "palindrome_code.html"},
+		{title:"Anagram",definition:"Definition:",content:"An anagram is a word or phrase that's formed by rearranging the letters of another word or phrase.",link: "anangram_code.html"},
+		{title:"Longest String",definition:"Definition:",content:"We have to find which string is longest/largest from the given sentence.",link: "longest string_code.html"},
+		{title:"Form Input",definition:"Definition:",content:"Get the input from user via input box and display the input in a table.",link: "form_code.html"},
+		{title:"Odd and Even",definition:"Definition:",content:"We have to find the odd and even number from the input and color the odd as red and even as green.",link: "odd and even_code.html"},
+		];
+		for (var i = 0; i < data.length; i++) 
+			{ 
+
+			document.getElementById('main_div').innerHTML += '<div class ="cards"><h1>' + data[i].title + '</h1><h2>' + data[i].definition + '</h2><p>' + data[i].content + '</p><a href= " ' + data[i].link+ '">VEIW CODE</a><i class="fa fa-2x fa-heart">' + '</i><i class="fa fa-2x fa-share-alt i1">' + '</i></div>';
+		}
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic data</title>
+	<link rel="stylesheet" type="text/css" href="css/js_dynamic.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="main_div">
+	</div>
+
+<script type="text/javascript">
+	var data = [
+		{image: "image/html.jpg",title:"Learning HTML",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",link: "html_cards.html"},
+		{image: "image/css.jpg",title:"Learning CSS",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",link: "css_cards.html"},
+		{image: "image/js.jpeg",title:"Learning JS",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",link: "js_cards.html"},
+		];
+		for (var i = 0; i < data.length; i++) 
+			{ 
+
+			document.getElementById('main_div').innerHTML += '<div class ="cards"><img src="'+data[i].image+'">'+'<h1>' + data[i].title + '</h1><p>' + data[i].content + '</p><a href= " ' + data[i].link+ '" target="blank">READ MORE</a><i class="fa fa-2x fa-heart">' + '</i><i class="fa fa-2x fa-share-alt i1">' + '</i></div>';
+		}
+</script>
+</body>
+</html>
